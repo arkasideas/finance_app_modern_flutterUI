@@ -1,4 +1,5 @@
 import 'package:finance_app_modern/colors.dart';
+import 'package:finance_app_modern/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -24,7 +25,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return SafeArea(
         child: Column(
       children: [
-        SizedBox(height: 50),
+        SizedBox(height: 80),
         Container(
           width: 70,
           height: 70,
@@ -36,7 +37,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
           ),
         ),
-        SizedBox(height: 50),
+        SizedBox(height: 80),
         Container(
           width: double.infinity,
           margin: EdgeInsets.symmetric(horizontal: 25),
@@ -57,7 +58,7 @@ class _LoginScreenState extends State<LoginScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "EmailAddress",
+                  "Email Address",
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
                     fontSize: 13,
@@ -137,18 +138,15 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
           ),
         ),
-        SizedBox(height: 80),
+        SizedBox(height: 60),
         GestureDetector(
           onTap: () {
-            print("HAHAHA");
-            /*
-          Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(
-              builder: (context) => HomeScreen(),
-            ),
-          );
-          */
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(
+                builder: (context) => HomeScreen(),
+              ),
+            );
           },
           child: Container(
             padding: EdgeInsets.all(16),
