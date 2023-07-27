@@ -244,7 +244,42 @@ class _TransactionScreenState extends State<TransactionScreen> {
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [Text("PAYMENT")],
+                                children: [
+                                  Text(
+                                    "Payment",
+                                    style: TextStyle(
+                                      fontSize: 15,
+                                      color: black,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  SizedBox(height: 5),
+                                  Text(
+                                    "Payment From Andrea",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      color: black.withOpacity(0.5),
+                                      fontWeight: FontWeight.w400,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            child: Container(
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: [
+                                  Text(
+                                    "\$30.0",
+                                    style: TextStyle(
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.bold,
+                                      color: black,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
@@ -255,6 +290,37 @@ class _TransactionScreenState extends State<TransactionScreen> {
                 ),
               ],
             ),
+            Padding(
+              padding: EdgeInsets.only(
+                top: 20,
+                bottom: 10,
+                right: 20,
+                left: 20,
+              ),
+              child: Column(
+                children: [
+                  Container(
+                    padding: EdgeInsets.only(
+                      left: 25,
+                      right: 25,
+                      top: 5,
+                      bottom: 5,
+                    ),
+                    margin: EdgeInsets.symmetric(horizontal: 15),
+                    child: Container(
+                      width: 325,
+                      height: 325,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage("images/bg.jpg"),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),
