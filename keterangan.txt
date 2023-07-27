@@ -1,2 +1,3 @@
 https://www.youtube.com/watch?v=x0T0FOTn41I&list=PLvG2mD7Ba5SzigkFFMElVrSJuzP5kzCQl&index=65
-menit 14:57
+menit 56:31
+Flutter versi 3.10.6
